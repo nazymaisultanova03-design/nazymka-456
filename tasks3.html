@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task 3 — Longest Word</title>
+</head>
+<body>
+<h1>Task 3: Longest Word</h1>
+<button onclick="longestWord()">Try Task</button>
+<script>
+function longestWord() {
+  let s = prompt("Enter a sentence:");
+  alert(s.split(" ").reduce((a,b)=>b.length>a.length?b:a,""));
+}
+</script>
+<a href="../index.html">Back to Tasks</a>
+</body>
+</html>
